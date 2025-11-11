@@ -265,7 +265,7 @@ class Zap2ItGuideScrape():
             programEl.appendChild(self.guideXML.createElement("previously-shown"))
         for tag in event["tags"]:
             if tag == "CC":
-                subtitlesEl = self.guideXML.createElement("subtitle")
+                subtitlesEl = self.guideXML.createElement("subtitles")
                 subtitlesEl.setAttribute("type","teletext")
                 programEl.appendChild(subtitlesEl)
         if event["rating"] is not None:
